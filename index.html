@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kyle Lawrence – Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1>Kyle Lawrence</h1>
+      <p>Business Analytics & Information Systems · Digital Product Management</p>
+      <nav aria-label="Main navigation">
+        <ul class="nav-list">
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="about" class="section">
+      <div class="container">
+        <h2>About Me</h2>
+        <p>
+          I’m Kyle Lawrence, a BAIS student at the University of Iowa focused on analytics,
+          digital products, and operations. This site is my portfolio template for BAIS:3300.
+        </p>
+      </div>
+    </section>
+
+    <section id="projects" class="section section-alt">
+      <div class="container">
+        <h2>Featured Work</h2>
+        <ul>
+          <li>Growth Model Automation – Power BI & CRM integration</li>
+          <li>Job Listing Analytics – SQL & data modeling project</li>
+          <li>EV Performance & Pricing – Data mining & Python scraping</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <div class="container">
+        <h2>Contact</h2>
+        <p>Email: <a href="mailto:kyle@example.com">kyle@example.com</a></p>
+        <p>LinkedIn: <a href="https://www.linkedin.com" target="_blank" rel="noopener">View my profile</a></p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; <span id="year"></span> Kyle Lawrence. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    // Simple JS that still passes validation
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
