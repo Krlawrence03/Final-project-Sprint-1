@@ -77,3 +77,24 @@
     padding: 1rem 0;
     font-size: 0.875rem;
   }
+  /* Header layout */
+.header-layout {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+  }
+  
+  /* Profile photo */
+  .profile-photo {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;   /* makes it circular */
+    object-fit: cover;    /* keeps good proportions */
+    border: 2px solid #e5e7eb;
+  }
+  
+  /* Wrap text & nav beside photo */
+  .header-text {
+    display: flex;
+    flex-direction: column;
+  }
