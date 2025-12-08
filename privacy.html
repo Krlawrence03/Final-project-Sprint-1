@@ -8,99 +8,70 @@
   <link rel="stylesheet" href="style.css" />
 
   <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-W14RVE0WF8"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-W14RVE0WF8');
-</script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-W14RVE0WF8"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-W14RVE0WF8');
+  </script>
 
+  <!-- Open Graph for social sharing -->
   <meta property="og:title" content="Privacy Policy – Kyle Lawrence" />
   <meta property="og:description" content="Privacy policy for kylelawrence.site." />
   <meta property="og:url" content="https://www.kylelawrence.site/privacy.html" />
   <meta property="og:image" content="https://www.kylelawrence.site/images/social-share.png" />
 </head>
 <body>
-  <header>
-    <nav aria-label="Main navigation">
-      <a href="index.html">Home</a>
-      <a href="terms.html">Terms</a>
-      <a href="privacy.html" aria-current="page">Privacy</a>
-      <a href="cookies.html">Cookie Policy</a>
-    </nav>
+  <header class="site-header">
+    <div class="container header-layout">
+      <div class="header-text">
+        <h1>Privacy Policy</h1>
+        <p>How data is collected and used on kylelawrence.site</p>
+        <nav aria-label="Main navigation">
+          <ul class="nav-list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="terms.html">Terms</a></li>
+            <li><a href="privacy.html" aria-current="page">Privacy</a></li>
+            <li><a href="cookies.html">Cookie Policy</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
   </header>
 
-  <main>
-    <h1>Privacy Policy</h1>
-    <p>Last updated: December 2025</p>
+  <main class="section">
+    <div class="container">
+      <p><em>Last updated: December 2025</em></p>
 
-    <h2>1. Overview</h2>
-    <p>
-      This Privacy Policy explains what information is collected when you visit
-      kylelawrence.site and how it is used.
-    </p>
+      <h2>Information I Collect</h2>
+      <p>This site does not collect personally identifiable information directly from you (such as forms or account logins). However, basic usage data may be collected through analytics tools.</p>
 
-    <h2>2. Information Collected</h2>
-    <ul>
-      <li>
-        <strong>Analytics data:</strong> I use Google Analytics to understand how
-        visitors find and use the site. This may include your approximate location,
-        device type, and pages visited. This data is aggregated and not used to
-        personally identify you.
-      </li>
-      <li>
-        <strong>Voluntary information:</strong> If you contact me by email or through
-        LinkedIn, I may receive your name, email address, and any other information
-        you choose to share.
-      </li>
-    </ul>
+      <h2>Analytics and Usage Data</h2>
+      <p>I use Google Analytics to understand how visitors use this website. This may include information such as pages visited, time on site, and the type of device or browser used. This data is aggregated and does not identify you personally.</p>
 
-    <h2>3. How Information Is Used</h2>
-    <p>
-      I use analytics information to improve the design and content of this portfolio
-      and to complete course assignments for BAIS:3300.
-    </p>
+      <h2>How Data Is Used</h2>
+      <p>Analytics data is used to improve the content, usability, and performance of the site and to better understand which pages are most helpful to visitors.</p>
 
-    <h2>4. Cookies and Tracking</h2>
-    <p>
-      Google Analytics may set cookies in your browser to help measure website
-      traffic and engagement. For more detail, see the Cookie Policy.
-    </p>
+      <h2>Data Sharing</h2>
+      <p>I do not sell your personal data. Analytics data may be processed by third-party providers (such as Google) according to their privacy policies.</p>
 
-    <h2>5. Third-Party Services</h2>
-    <p>
-      This site may link to or embed content from third-party services (such as
-      Google, LinkedIn, or GitHub). These services have their own privacy policies
-      and practices that are separate from this site.
-    </p>
+      <h2>Your Choices</h2>
+      <p>You can control or limit the use of cookies and tracking technologies through your browser settings or by using privacy tools and browser extensions.</p>
 
-    <h2>6. Data Retention</h2>
-    <p>
-      Analytics data is retained according to the settings configured in Google
-      Analytics. I do not separately store or sell personal data from this website.
-    </p>
-
-    <h2>7. Your Choices</h2>
-    <ul>
-      <li>You can disable cookies in your browser settings.</li>
-      <li>You can use browser extensions or privacy tools to block analytics.</li>
-    </ul>
-
-    <h2>8. Contact</h2>
-    <p>
-      If you have questions about this Privacy Policy, contact me at
-      <a href="mailto:krlawrence@uiowa.edu">krlawrence@uiowa.edu</a>.
-    </p>
+      <h2>Contact</h2>
+      <p>If you have questions about this privacy policy, you can reach me via the contact information provided on the main site.</p>
+    </div>
   </main>
 
-  <footer>
-    <p>
-      &copy; Kyle Lawrence. All rights reserved.
-      <a href="terms.html">Terms</a> ·
-      <a href="privacy.html">Privacy</a> ·
-      <a href="cookies.html">Cookie Policy</a>
-    </p>
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; <span id="year"></span> Kyle Lawrence. All rights reserved.</p>
+    </div>
   </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>

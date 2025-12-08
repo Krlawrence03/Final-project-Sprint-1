@@ -4,94 +4,72 @@
   <meta charset="utf-8" />
   <title>Terms &amp; Conditions – Kyle Lawrence</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-W14RVE0WF8"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-W14RVE0WF8');
-</script>
-
-  <!-- Description -->
   <meta name="description" content="Terms and conditions for using kylelawrence.site." />
-
-  <!-- Link to your CSS (update the href if your file is named differently) -->
   <link rel="stylesheet" href="style.css" />
 
-  <!-- Basic Open Graph for social sharing -->
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-W14RVE0WF8"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-W14RVE0WF8');
+  </script>
+
+  <!-- Open Graph for social sharing -->
   <meta property="og:title" content="Terms &amp; Conditions – Kyle Lawrence" />
   <meta property="og:description" content="Terms and conditions for using kylelawrence.site." />
   <meta property="og:url" content="https://www.kylelawrence.site/terms.html" />
   <meta property="og:image" content="https://www.kylelawrence.site/images/social-share.png" />
 </head>
 <body>
-  <header>
-    <nav aria-label="Main navigation">
-      <a href="index.html">Home</a>
-      <a href="terms.html" aria-current="page">Terms</a>
-      <a href="privacy.html">Privacy</a>
-      <a href="cookies.html">Cookie Policy</a>
-    </nav>
+  <header class="site-header">
+    <div class="container header-layout">
+      <div class="header-text">
+        <h1>Terms &amp; Conditions</h1>
+        <p>Guidelines for using kylelawrence.site</p>
+        <nav aria-label="Main navigation">
+          <ul class="nav-list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="terms.html" aria-current="page">Terms</a></li>
+            <li><a href="privacy.html">Privacy</a></li>
+            <li><a href="cookies.html">Cookie Policy</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
   </header>
 
-  <main>
-    <h1>Terms &amp; Conditions</h1>
-    <p>Last updated: December 2025</p>
+  <main class="section">
+    <div class="container">
+      <h2>Introduction</h2>
+      <p>By accessing and using <strong>kylelawrence.site</strong>, you agree to the following terms and conditions.</p>
 
-    <h2>1. Introduction</h2>
-    <p>
-      Welcome to kylelawrence.site. By accessing or using this website, you agree to
-      these Terms &amp; Conditions. If you do not agree, please do not use this site.
-    </p>
+      <h2>Acceptable Use</h2>
+      <p>You agree not to use this site for any unlawful or harmful activity, including attempts to gain unauthorized access to the site or its underlying systems.</p>
 
-    <h2>2. Purpose of This Site</h2>
-    <p>
-      This website is a personal portfolio created for the BAIS:3300 Digital Product
-      Management course at the University of Iowa. The content is for educational and
-      informational purposes only.
-    </p>
+      <h2>Accuracy of Information</h2>
+      <p>I do my best to keep information accurate and up to date, but I cannot guarantee completeness or accuracy. Content is provided for general informational purposes only.</p>
 
-    <h2>3. No Professional Advice</h2>
-    <p>
-      Nothing on this site should be interpreted as professional, legal, or financial
-      advice. You are responsible for how you use any information found here.
-    </p>
+      <h2>Third-Party Links</h2>
+      <p>This site may link to third-party websites. I am not responsible for the content or practices of those external sites.</p>
 
-    <h2>4. Intellectual Property</h2>
-    <p>
-      Unless otherwise noted, all text and images on this site are owned by Kyle
-      Lawrence. You may not copy, reproduce, or reuse content without permission.
-    </p>
+      <h2>Changes to These Terms</h2>
+      <p>These terms may be updated periodically. Any changes will be reflected on this page with an updated “Last updated” date.</p>
 
-    <h2>5. Links to Other Websites</h2>
-    <p>
-      This site may contain links to third-party websites (for example, LinkedIn).
-      These links are provided for convenience only. I am not responsible for the
-      content or privacy practices of those sites.
-    </p>
-
-    <h2>6. Changes to These Terms</h2>
-    <p>
-      These Terms &amp; Conditions may be updated from time to time. Changes will be
-      posted on this page with an updated “Last updated” date.
-    </p>
-
-    <h2>7. Contact</h2>
-    <p>
-      If you have questions about these terms, you can contact me at
-      <a href="mailto:krlawrence@uiowa.edu">krlawrence@uiowa.edu</a>.
-    </p>
+      <p><em>Last updated: December 2025</em></p>
+    </div>
   </main>
 
-  <footer>
-    <p>
-      &copy; Kyle Lawrence. All rights reserved.
-      <a href="terms.html">Terms</a> ·
-      <a href="privacy.html">Privacy</a> ·
-      <a href="cookies.html">Cookie Policy</a>
-    </p>
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; <span id="year"></span> Kyle Lawrence. All rights reserved.</p>
+    </div>
   </footer>
+
+  <script>
+    // Set current year in footer
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
