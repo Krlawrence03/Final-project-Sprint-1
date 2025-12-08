@@ -5,7 +5,6 @@
   <title>Terms &amp; Conditions – Kyle Lawrence</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="description" content="Terms and conditions for using kylelawrence.site." />
-  <link rel="stylesheet" href="style.css" />
 
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-W14RVE0WF8"></script>
@@ -16,7 +15,9 @@
     gtag('config', 'G-W14RVE0WF8');
   </script>
 
-  <!-- Open Graph for social sharing -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Open Graph -->
   <meta property="og:title" content="Terms &amp; Conditions – Kyle Lawrence" />
   <meta property="og:description" content="Terms and conditions for using kylelawrence.site." />
   <meta property="og:url" content="https://www.kylelawrence.site/terms.html" />
@@ -24,10 +25,12 @@
 </head>
 <body>
   <header class="site-header">
-    <div class="container header-layout">
-      <div class="header-text">
-        <h1>Terms &amp; Conditions</h1>
-        <p>Guidelines for using kylelawrence.site</p>
+    <div class="container">
+      <div class="header-layout">
+        <div class="header-text">
+          <h1>Terms &amp; Conditions</h1>
+          <p>Guidelines for using kylelawrence.site</p>
+        </div>
         <nav aria-label="Main navigation">
           <ul class="nav-list">
             <li><a href="index.html">Home</a></li>
@@ -40,25 +43,30 @@
     </div>
   </header>
 
-  <main class="section">
-    <div class="container">
-      <h2>Introduction</h2>
-      <p>By accessing and using <strong>kylelawrence.site</strong>, you agree to the following terms and conditions.</p>
+  <main>
+    <section class="section">
+      <div class="container">
+        <p><strong>Last updated:</strong> December 2025</p>
 
-      <h2>Acceptable Use</h2>
-      <p>You agree not to use this site for any unlawful or harmful activity, including attempts to gain unauthorized access to the site or its underlying systems.</p>
+        <!-- Put your actual Terms content here -->
+        <h2>1. Acceptance of Terms</h2>
+        <p>By accessing or using kylelawrence.site, you agree to these Terms &amp; Conditions.</p>
 
-      <h2>Accuracy of Information</h2>
-      <p>I do my best to keep information accurate and up to date, but I cannot guarantee completeness or accuracy. Content is provided for general informational purposes only.</p>
+        <h2>2. Use of the Site</h2>
+        <p>You agree not to misuse this site or attempt to interfere with its normal operation.</p>
 
-      <h2>Third-Party Links</h2>
-      <p>This site may link to third-party websites. I am not responsible for the content or practices of those external sites.</p>
+        <h2>3. Intellectual Property</h2>
+        <p>Unless otherwise noted, all content on this site is owned by or licensed to Kyle Lawrence.</p>
 
-      <h2>Changes to These Terms</h2>
-      <p>These terms may be updated periodically. Any changes will be reflected on this page with an updated “Last updated” date.</p>
+        <h2>4. Limitation of Liability</h2>
+        <p>This site is provided “as is” without warranties of any kind. Use it at your own risk.</p>
 
-      <p><em>Last updated: December 2025</em></p>
-    </div>
+        <h2>5. Changes to These Terms</h2>
+        <p>I may update these Terms from time to time. Continued use of the site means you accept any changes.</p>
+
+        <p>If you have questions about these Terms, contact me at the email listed on the site.</p>
+      </div>
+    </section>
   </main>
 
   <footer class="site-footer">
@@ -67,9 +75,12 @@
     </div>
   </footer>
 
+  <!-- If you have a script that sets #year, include it here or in a shared JS file -->
   <script>
-    // Set current year in footer
-    document.getElementById('year').textContent = new Date().getFullYear();
+    const yearSpan = document.getElementById('year');
+    if (yearSpan) {
+      yearSpan.textContent = new Date().getFullYear();
+    }
   </script>
 </body>
 </html>
