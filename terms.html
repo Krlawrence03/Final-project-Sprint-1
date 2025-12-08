@@ -1,11 +1,6 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <title>Terms &amp; Conditions – Kyle Lawrence</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Terms and conditions for using kylelawrence.site." />
-
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-W14RVE0WF8"></script>
   <script>
@@ -15,7 +10,13 @@
     gtag('config', 'G-W14RVE0WF8');
   </script>
 
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Terms &amp; Conditions – Kyle Lawrence</title>
+  <meta name="description" content="Terms and conditions for using kylelawrence.site." />
+
+  <!-- Match index.html exactly here -->
+  <link rel="stylesheet" href="styles.css">
 
   <!-- Open Graph -->
   <meta property="og:title" content="Terms &amp; Conditions – Kyle Lawrence" />
@@ -24,16 +25,20 @@
   <meta property="og:image" content="https://www.kylelawrence.site/images/social-share.png" />
 </head>
 <body>
+
   <header class="site-header">
-    <div class="container">
-      <div class="header-layout">
-        <div class="header-text">
-          <h1>Terms &amp; Conditions</h1>
-          <p>Guidelines for using kylelawrence.site</p>
-        </div>
+    <div class="container header-layout">
+      <img src="images/IMG_5291.jpeg" alt="Photo of Kyle Lawrence" class="profile-photo">
+
+      <div class="header-text">
+        <h1>Kyle Lawrence</h1>
+        <p>Business Analytics &amp; Information Systems · Digital Product Management</p>
+
         <nav aria-label="Main navigation">
           <ul class="nav-list">
-            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html#about">About</a></li>
+            <li><a href="index.html#projects">Projects</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
             <li><a href="terms.html" aria-current="page">Terms</a></li>
             <li><a href="privacy.html">Privacy</a></li>
             <li><a href="cookies.html">Cookie Policy</a></li>
@@ -46,25 +51,43 @@
   <main>
     <section class="section">
       <div class="container">
-        <p><strong>Last updated:</strong> December 2025</p>
+        <h2>Terms &amp; Conditions</h2>
+        <p><em>Last updated: December 2025</em></p>
 
-        <!-- Put your actual Terms content here -->
-        <h2>1. Acceptance of Terms</h2>
-        <p>By accessing or using kylelawrence.site, you agree to these Terms &amp; Conditions.</p>
+        <h3>1. Acceptance of Terms</h3>
+        <p>
+          By accessing or using kylelawrence.site, you agree to be bound by these Terms &amp; Conditions.
+          If you do not agree, please do not use the site.
+        </p>
 
-        <h2>2. Use of the Site</h2>
-        <p>You agree not to misuse this site or attempt to interfere with its normal operation.</p>
+        <h3>2. Use of the Site</h3>
+        <p>
+          This portfolio website is intended for educational and professional purposes only. You agree not
+          to misuse the site or attempt to interfere with its security or functionality.
+        </p>
 
-        <h2>3. Intellectual Property</h2>
-        <p>Unless otherwise noted, all content on this site is owned by or licensed to Kyle Lawrence.</p>
+        <h3>3. Intellectual Property</h3>
+        <p>
+          Unless otherwise noted, all content on this site is created by and owned by Kyle Lawrence and may
+          not be reproduced without permission.
+        </p>
 
-        <h2>4. Limitation of Liability</h2>
-        <p>This site is provided “as is” without warranties of any kind. Use it at your own risk.</p>
+        <h3>4. Links to Other Sites</h3>
+        <p>
+          This site may contain links to third-party websites. Those sites are not controlled by Kyle
+          Lawrence, and no responsibility is taken for their content or practices.
+        </p>
 
-        <h2>5. Changes to These Terms</h2>
-        <p>I may update these Terms from time to time. Continued use of the site means you accept any changes.</p>
+        <h3>5. Changes to These Terms</h3>
+        <p>
+          These Terms &amp; Conditions may be updated from time to time. Any changes will be reflected on this page.
+        </p>
 
-        <p>If you have questions about these Terms, contact me at the email listed on the site.</p>
+        <h3>6. Contact</h3>
+        <p>
+          If you have questions about these Terms &amp; Conditions, please contact
+          <a href="mailto:krlawrence@uiowa.edu">krlawrence@uiowa.edu</a>.
+        </p>
       </div>
     </section>
   </main>
@@ -72,15 +95,16 @@
   <footer class="site-footer">
     <div class="container">
       <p>&copy; <span id="year"></span> Kyle Lawrence. All rights reserved.</p>
+      <p>
+        <a href="terms.html">Terms &amp; Conditions</a> |
+        <a href="privacy.html">Privacy Policy</a> |
+        <a href="cookies.html">Cookie Policy</a>
+      </p>
     </div>
   </footer>
 
-  <!-- If you have a script that sets #year, include it here or in a shared JS file -->
   <script>
-    const yearSpan = document.getElementById('year');
-    if (yearSpan) {
-      yearSpan.textContent = new Date().getFullYear();
-    }
+    document.getElementById('year').textContent = new Date().getFullYear();
   </script>
 </body>
 </html>
